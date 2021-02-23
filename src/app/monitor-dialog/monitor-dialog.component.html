@@ -1,0 +1,12 @@
+<abp-modal-header
+    title="Envio de alerta (Defesa Civil)"
+    (onCloseClick)="bsModalRef.hide()"
+  ></abp-modal-header>
+  <div class="modal-body">
+      <b>Alerta enviado ao serviço externo da defesa civil!</b>
+  </div>
+  <abp-modal-footer
+  [cancelDisabled]="saving"
+  saveDisabled="true"  
+  (onCancelClick)="bsModalRef.hide()"  
+></abp-modal-footer>

@@ -1,0 +1,57 @@
+<div [@routerTransition]>
+    <section class="content-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1>Monitoramento</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content px-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-success">
+                      <div class="inner">
+                        <h3>8.2</h3>
+                        <p>Barragem 1</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-star"></i>
+                      </div>                                            
+                    </div>   
+                </div>     
+                <div class="col-lg-3 col-6">
+                        <div class="small-box bg-warning">
+                          <div class="inner">
+                            <h3>1.6</h3>
+                            <p>Barragem 2</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-eye"></i>
+                          </div>                         
+                        </div>                      
+                </div>   
+                <div class="col-lg-3 col-6">
+                    <div class="small-box badge-danger">
+                      <div class="inner">
+                        <h3>0.1</h3>
+                        <p>Barragem 3</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                      </div>
+                      <a
+                         (click)="showCreateOrEditRoleDialog()"
+                         class="small-box-footer"                         
+                      >
+                        Enviar Alerta (Defesa Civil)
+                    <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                    </div>
+                </div>                                 
+            </div>
+        </div>
+      </section>
+</div>
